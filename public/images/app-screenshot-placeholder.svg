@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+  <defs>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+  <rect width="1100" height="620" rx="44" fill="#e2e8f0"/>
+  <g filter="url(#shadow)">
+    <rect x="80" y="70" width="940" height="500" rx="28" fill="url(#screen)"/>
+    <rect x="80" y="70" width="940" height="56" rx="28" fill="#1e293b"/>
+    <circle cx="122" cy="98" r="9" fill="#fb7185"/>
+    <circle cx="153" cy="98" r="9" fill="#fbbf24"/>
+    <circle cx="184" cy="98" r="9" fill="#34d399"/>
+    <rect x="130" y="168" width="220" height="330" rx="18" fill="#1e293b"/>
+    <rect x="390" y="168" width="580" height="74" rx="18" fill="#334155"/>
+    <rect x="390" y="274" width="580" height="224" rx="18" fill="#111827"/>
+    <rect x="162" y="208" width="150" height="18" rx="9" fill="#64748b"/>
+    <rect x="162" y="258" width="118" height="18" rx="9" fill="#64748b"/>
+    <rect x="162" y="308" width="170" height="18" rx="9" fill="#64748b"/>
+    <rect x="162" y="358" width="132" height="18" rx="9" fill="#64748b"/>
+    <rect x="432" y="197" width="260" height="18" rx="9" fill="#94a3b8"/>
+    <rect x="432" y="318" width="420" height="16" rx="8" fill="#475569"/>
+    <rect x="432" y="362" width="490" height="16" rx="8" fill="#475569"/>
+    <rect x="432" y="406" width="300" height="16" rx="8" fill="#475569"/>
+  </g>
+  <text x="550" y="330" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="900" fill="#e0f2fe">App screenshot placeholder</text>
+  <text x="550" y="382" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" fill="#bfdbfe">drop the real Jira wrapper screenshot here</text>
+</svg>

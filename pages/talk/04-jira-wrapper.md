@@ -3,110 +3,68 @@ layout: two-cols
 layoutClass: gap-12
 ---
 
-# Jira made the friction impossible to ignore
+# Intermission: Jira walks on stage
 
-<div class="text-xl muted mt-4">Important disclaimer:</div>
+<div class="text-xl muted mt-4">Right when the code is finally in your head…</div>
 
 <div v-click class="card mt-5">
-  <div class="text-3xl font-bold">Jira is powerful.</div>
-  <div class="muted mt-2">Powerful like a spaceship cockpit is powerful.</div>
+  <div class="text-3xl font-bold">Reality knocks.</div>
+  <div class="muted mt-2">Move the ticket. Update the status. Add the note. Keep the process alive.</div>
 </div>
 
 <div v-click class="card mt-5">
-  <div class="text-3xl font-bold">But power ≠ flow.</div>
-  <div class="muted mt-2">Sometimes power means 11 dropdowns and a tiny loading spinner contemplating its life choices.</div>
+  <div class="text-3xl font-bold">Not a villain. Just gravity.</div>
+  <div class="muted mt-2">The work still has to be tracked. I just didn’t want tracking the work to become the work.</div>
 </div>
 
 ::right::
 
-<div class="mt-10 flex justify-center">
+<div class="mt-8 text-center">
+  <div class="text-7xl">🎟️</div>
+  <div class="mt-3 text-2xl font-bold accent-pink">Please pause your flow state</div>
+  <div class="muted mt-2">This mandatory intermission has been brought to you by operational reality.</div>
+</div>
+
+<div class="mt-8 flex justify-center">
   <div>
     <div class="battery"><div class="battery-fill"></div></div>
     <div class="text-center mt-4 text-xl font-bold accent-pink">Working memory</div>
   </div>
 </div>
 
-<div v-click class="mt-10 text-3xl font-bold text-center">Every time I opened Jira, I felt my working memory drain.</div>
+<div v-click class="mt-8 text-3xl font-bold text-center">The problem was not Jira existing. It was leaving flow to negotiate with it.</div>
 
 <!--
-Keep this kind. The point is not “Jira bad.” The point is that a powerful general-purpose UI can be a poor fit for a keyboard-first coding loop.
+Story beat: let Jira be the annoying intermission, not the enemy.
+Say: “Every real organization has some operational source of truth. The work has to be tracked. The question is whether that reality should get to yank me out of the loop every time.”
+Then transition: I did not replace Jira. I put a smaller, kinder doorway in front of it.
 -->
 
 ---
-layout: center
+layout: default
 class: text-center
 ---
 
-# So I built a wrapper
+# You build a <span v-click="1" class="accent">wrapper</span>
 
-<div class="text-2xl muted mt-4">Not to replace the system. To put a better interface in front of it.</div>
+<div v-click="2" class="text-2xl muted mt-4">Not to replace the system. To put a better interface in front of it.</div>
 
-<div class="grid grid-cols-2 gap-8 mt-10 text-left">
-  <div v-click class="card">
-    <div class="text-5xl mb-3">🧱</div>
-    <div class="text-2xl font-bold">Jira remained the source of truth</div>
-    <div class="muted mt-2">Same data. Same workflow requirements. Fewer browser side quests.</div>
-  </div>
-  <div v-click class="card pulse-soft">
-    <div class="text-5xl mb-3">⌨️</div>
-    <div class="text-2xl font-bold">My wrapper matched how I think</div>
-    <div class="muted mt-2">Keyboard-first, low latency, close to code.</div>
-  </div>
+<div class="mt-5 mx-auto w-[620px] max-w-full h-[350px] flex items-center justify-center">
+  <v-switch>
+    <template #1>
+      <img class="rounded-2xl shadow-xl border border-white/20" src="/images/wrapper-rappers.svg" alt="Vanilla Ice and Wu-Tang Clan wrapper joke" />
+    </template>
+    <template #2>
+      <img class="rounded-2xl shadow-xl border border-white/20" src="/images/app-screenshot-placeholder.svg" alt="Placeholder screenshot of our Jira wrapper app" />
+    </template>
+    <template #3>
+      <img class="rounded-2xl shadow-xl border border-white/20" src="/images/app-screenshot-placeholder.svg" alt="Placeholder screenshot of our Jira wrapper app" />
+    </template>
+  </v-switch>
 </div>
 
-<div v-click class="mt-10 text-3xl font-bold">The breakthrough was not a new backend. It was a <span class="accent">shorter path</span>.</div>
+<div v-click="3" class="mt-5 text-3xl font-bold">This was a <span class="accent">shorter path</span>. Same JIRA, different Surface Area</div>
 
 <!--
 This echoes migration empathy: I did not throw out the system. I built a bridge between the system and the way I work.
--->
-
----
-layout: two-cols-header
-layoutClass: gap-10
----
-
-# Same Jira, different surface area
-
-::left::
-
-<div class="text-xl font-bold mb-4">Before</div>
-
-<div v-clicks class="grid gap-3">
-  <div class="mini-card">Open browser</div>
-  <div class="mini-card">Find board</div>
-  <div class="mini-card">Find issue</div>
-  <div class="mini-card">Wait for panel</div>
-  <div class="mini-card">Click tiny thing</div>
-  <div class="mini-card">Forget what I was coding</div>
-</div>
-
-::right::
-
-<div class="text-xl font-bold mb-4">After</div>
-
-````md magic-move {lines: true}
-```bash
-# thought: what am I working on?
-```
-```bash
-$ issues mine
-```
-```bash
-$ issues mine --status "In Progress"
-```
-```bash
-$ issue open PAY-123
-```
-```bash
-$ issue note PAY-123 "Found the flaky edge case"
-```
-````
-
-<div v-click class="mt-5 card">
-  <span class="accent-green font-bold">Flow restored:</span> issue context stayed near code context.
-</div>
-
-<!--
-Use this as an illustrative sketch, not necessarily exact commands.
-The important contrast is UI tourism versus direct expression of intent.
 -->

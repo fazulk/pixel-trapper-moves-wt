@@ -27,42 +27,16 @@ This is the bridge into the AI IDE portion. Make it feel inevitable rather than 
 -->
 
 ---
-layout: two-cols
-layoutClass: gap-12
+layout: center
+class: text-center
 ---
 
-# What I wanted AI to feel like
-
-<div class="text-2xl muted mt-4">Less chatbot. More vim motions.</div>
-
-<div v-click class="card mt-8">
-  <div class="text-4xl mb-3">🧩</div>
-  <div class="text-2xl font-bold">Composable</div>
-  <div class="muted mt-2">Small actions that combine into real work.</div>
-</div>
-
-<div v-click class="card mt-5">
-  <div class="text-4xl mb-3">🎛️</div>
-  <div class="text-2xl font-bold">Controlled</div>
-  <div class="muted mt-2">Humans steer. Agents execute. Nobody free-solos production.</div>
-</div>
-
-::right::
-
-<div class="mt-6 grid gap-5">
-  <div v-click class="mini-card">
-    <div class="text-sm muted mb-1">Vim-ish</div>
-    <div class="text-2xl"><code>operator</code> + <code>motion</code> + <code>object</code></div>
-  </div>
-  <div v-click class="mini-card">
-    <div class="text-sm muted mb-1">Agent-ish</div>
-    <div class="text-2xl"><code>intent</code> + <code>context</code> + <code>guardrails</code></div>
-  </div>
-  <div v-click class="card pulse-soft">
-    <div class="text-2xl font-bold accent">Think → express → review → ship</div>
-    <div class="muted mt-2">A tight feedback loop, not a séance with autocomplete.</div>
-  </div>
-</div>
+<img
+  v-click
+  class="mx-auto w-[1080px] max-w-full rounded-2xl shadow-2xl border border-white/15"
+  src="/images/ai-feel-like.png"
+  alt="Screenshot of pi showing an AI agent IDE workflow"
+/>
 
 <!--
 This is the strongest analogy in the talk. AI should feel native to the work.
