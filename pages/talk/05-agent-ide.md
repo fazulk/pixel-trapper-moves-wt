@@ -79,56 +79,17 @@ Emphasize iteration. The first wrapper was not perfect. The IDE emerged from rep
 -->
 
 ---
-layout: two-cols-header
-layoutClass: gap-8
----
-
-# The old loop vs. the flow loop
-
-::left::
-
-<div class="text-xl font-bold mb-4">Old loop: tab cardio</div>
-<div class="grid gap-3">
-  <div v-click class="mini-card">Editor</div>
-  <div v-click class="mini-card">Browser</div>
-  <div v-click class="mini-card">Terminal</div>
-  <div v-click class="mini-card">Jira</div>
-  <div v-click class="mini-card">Chatbot</div>
-  <div v-click class="mini-card">“Where was I?”</div>
-</div>
-
-::right::
-
-<div class="text-xl font-bold mb-4">Flow loop: close to the work</div>
-<div class="grid gap-3">
-  <div v-click class="card">🧠 Intent</div>
-  <div v-click class="card">📚 Context already attached</div>
-  <div v-click class="card">🤖 Agent does bounded work</div>
-  <div v-click class="card">👀 Human reviews diff</div>
-  <div v-click class="card pulse-soft">✅ Momentum survives</div>
-</div>
-
-<!--
-“Tab cardio” should get a laugh. This slide summarizes why interface consolidation mattered.
--->
-
----
 layout: center
 class: text-center
 ---
 
 # What changed?
 
-<div class="grid grid-cols-3 gap-6 mt-10 text-left">
+<div class="grid grid-cols-2 gap-8 mt-10 text-left">
   <div v-click class="card">
     <div class="text-5xl mb-3">⏱️</div>
     <div class="text-2xl font-bold">Latency dropped</div>
     <div class="muted mt-2">Not just network latency. Human decision latency.</div>
-  </div>
-  <div v-click class="card">
-    <div class="text-5xl mb-3">🧠</div>
-    <div class="text-2xl font-bold">Context stayed warm</div>
-    <div class="muted mt-2">Working memory stopped falling out of my pockets.</div>
   </div>
   <div v-click class="card">
     <div class="text-5xl mb-3">🌊</div>
