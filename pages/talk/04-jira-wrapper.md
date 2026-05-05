@@ -49,19 +49,20 @@ class: text-center
 
 <div v-click="2" class="text-2xl muted mt-4">Not to replace the system. To put a better interface in front of it.</div>
 
-<div class="mt-5 mx-auto w-[620px] max-w-full h-[350px] flex items-center justify-center">
-  <v-switch>
-    <template #1>
-      <img class="rounded-2xl shadow-xl border border-white/20" src="/images/wrapper-rappers.svg" alt="Vanilla Ice and Wu-Tang Clan wrapper joke" />
-    </template>
-    <template #2>
-      <img class="rounded-2xl shadow-xl border border-white/20" src="/images/app-screenshot-placeholder.svg" alt="Placeholder screenshot of our Jira wrapper app" />
-    </template>
-    <template #3>
-      <img class="rounded-2xl shadow-xl border border-white/20" src="/images/app-screenshot-placeholder.svg" alt="Placeholder screenshot of our Jira wrapper app" />
-    </template>
-  </v-switch>
-</div>
+<v-switch>
+  <template #1>
+    <div class="mt-5 flex items-center justify-center gap-8">
+      <img class="h-[285px] object-contain" src="/images/vanilla-ice.png" alt="Vanilla Ice" />
+      <img class="h-[285px] object-contain" src="/images/wu-tang-clan.png" alt="Wu-Tang Clan" />
+    </div>
+  </template>
+  <template #2>
+    <img class="mt-5 mx-auto max-h-[350px] object-contain" src="/images/app-screenshot-placeholder.svg" alt="Placeholder screenshot of our Jira wrapper app" />
+  </template>
+  <template #3>
+    <img class="mt-5 mx-auto max-h-[350px] object-contain" src="/images/app-screenshot-placeholder.svg" alt="Placeholder screenshot of our Jira wrapper app" />
+  </template>
+</v-switch>
 
 <div v-click="3" class="mt-5 text-3xl font-bold">This was a <span class="accent">shorter path</span>. Same JIRA, different Surface Area</div>
 
