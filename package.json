@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
+    "build:serve": "slidev build && vite preview --host 0.0.0.0",
     "dev": "slidev --open",
     "export": "slidev export"
   },
