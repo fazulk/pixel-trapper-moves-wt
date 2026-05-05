@@ -9,7 +9,7 @@ transition: slide-up
 <div class="text-xl muted mt-4">Speed is not typing faster. Speed is translating less.</div>
 
 <div v-click class="mt-8 card">
-  <div class="text-4xl mb-2">⌨️💨</div>
+  <img src="/images/low-friction-tools.png" alt="Low-friction tools" class="w-28 h-28 rounded-2xl mb-4 shadow-xl" />
   <div class="text-2xl font-bold">Vim and Vim motions is a great example of this</div>
   <div class="muted mt-2">Your keyboard becomes a controlled substance</div>
 </div>
