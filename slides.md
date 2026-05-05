@@ -3,7 +3,7 @@ theme: seriph
 title: The Interface Is the Bottleneck
 info: |
   ## The Interface Is the Bottleneck
-  A short town-hall talk about flow, AI agents, Jira friction, and why the best tools disappear.
+  A short town-hall talk about using interface design to reduce workflow friction across AI agents, Jira, and developer tooling.
 class: text-center
 colorSchema: dark
 transition: slide-left

@@ -5,7 +5,7 @@
 
 # <span class="title-gradient">The Interface<br/>Is the Bottleneck</span>
 
-<div class="mt-7 text-2xl muted">Chasing flow in the age of AI agents</div>
+<div class="mt-7 text-2xl muted">How to shorten the path between intent and outcome</div>
 
 <div class="mt-12 flex justify-center gap-7">
   <div v-motion :initial="{ y: 30, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 250 } }" class="orb floaty">⌨️</div>
@@ -16,54 +16,11 @@
 </div>
 
 <!--
-Open light and personal. This is not a vendor comparison and not “AI tools are cool.”
-It is a story about flow: I had it, I lost it, and I rebuilt my environment until I could get it back.
+Open light, but frame this as a useful pattern, not a personal tool diary.
+The examples are mine, but the question is for everyone:
+where does our work slow down because the interface makes us translate intent too many times?
 -->
 
----
-layout: center
-class: text-center
-transition: fade-out
----
-
-<div class="kicker mx-auto mb-8">The whole talk in one emotionally suspicious timeline</div>
-
-<div class="grid grid-cols-4 gap-5 text-left">
-  <div v-click class="card">
-    <div class="text-5xl mb-3">🌊</div>
-    <div class="text-2xl font-bold">Flow</div>
-    <div class="muted mt-2">Vim made<br> thought → action<br> feel tiny.</div>
-  </div>
-  <div v-click class="card">
-    <div class="ai-heads">
-      <img class="ai-head dario" src="/people/dario-amodei.png" alt="Dario Amodei head" />
-      <img class="ai-head sam" src="/people/sam-altman.png" alt="Sam Altman head" />
-    </div>
-    <div class="text-2xl font-bold">Chat GPT & Claude Code</div>
-    <div class="muted mt-2">Powerful model. Weirdly clunky ritual.</div>
-  </div>
-  <div v-click class="card">
-    <div class="mb-3">
-      <img class="w-14 h-14" src="https://cdn.simpleicons.org/jira/2684FF" alt="Jira logo" />
-    </div>
-    <div class="text-2xl font-bold">Jira</div>
-    <div class="muted mt-2">Ol' Reliable Jira</div>
-  </div>
-  <div v-click class="card pulse-soft">
-    <div class="text-5xl mb-3">🎁</div>
-    <div class="text-2xl font-bold">Rip and Wrap </div>
-    <div class="muted mt-2">You know, like a present.</div>
-  </div>
-</div>
-
-<!-- <div v-click class="mt-10 text-3xl font-bold">
-  I wasn’t chasing tools. I was chasing <span class="accent">flow</span>.
-</div> -->
-
-<!--
-Set the emotional arc. The audience should know where we’re going immediately.
-The joke is that “clickable” is both a product virtue and a developer tax.
--->
 
 ---
 layout: statement
@@ -90,9 +47,10 @@ class: text-center
   </div>
 </div>
 
-<div v-click class="mt-8 text-xl muted">The interface is where momentum either survives… or goes to open seventeen tabs.</div>
+<div v-click class="mt-8 text-xl muted">The interface is where momentum either survives — or turns into coordination work.</div>
 
 <!--
-This is the lens for the rest of the talk. We usually talk about compute, model quality, process, or features.
-But the day-to-day bottleneck is often the interface between what I mean and what the system does.
+This is the core service of the talk: a diagnostic lens.
+When a workflow feels slow, don't only ask “is the tool powerful?”
+Ask “how much translation does the person have to do between intent and outcome?”
 -->

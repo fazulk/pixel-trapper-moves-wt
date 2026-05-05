@@ -2,13 +2,13 @@
 layout: default
 ---
 
-# Lessons I’d steal from this
+# Lessons you can apply
 
 <div class="grid grid-cols-2 gap-6 mt-8 items-stretch">
   <div v-click class="card min-h-[210px] flex flex-col justify-center">
     <div class="text-4xl mb-3">🌊</div>
     <div class="text-2xl font-bold">Flow is a product requirement</div>
-    <div class="muted mt-2">Not a luxury for people with mechanical keyboards.</div>
+    <div class="muted mt-2">If the workflow breaks concentration, the product is not done.</div>
   </div>
   <div v-click class="card min-h-[210px] flex flex-col justify-center">
     <div class="text-4xl mb-3">📏</div>
@@ -18,12 +18,17 @@ layout: default
   <div v-click class="card min-h-[210px] flex flex-col justify-center col-span-2 mx-auto w-[calc(50%-0.75rem)]">
     <div class="text-4xl mb-3">🤖</div>
     <div class="text-2xl font-bold">AI needs workflow design</div>
-    <div class="muted mt-2">A powerful model in a bad loop still feels slow.</div>
+    <div class="muted mt-2">A powerful model in a bad loop still creates coordination work.</div>
   </div>
 </div>
 
 <!--
-These are the general-purpose takeaways for a town hall. They apply beyond my tools.
+This is the handoff to the audience.
+They do not need my tools.
+They can look at any workflow and ask:
+Where are people translating?
+Where are they context-switching?
+Where are they doing coordination work that the interface could absorb?
 -->
 
 ---
@@ -36,14 +41,14 @@ transition: fade-out
 
 <div class="text-2xl muted mb-6">Final thought</div>
 
-# The goal wasn’t to build another tool.
+# The goal is not more tools.
 
-<h1 v-click class="mt-8"><span class="title-gradient">The goal was to make the tool disappear.</span></h1>
+<h1 v-click class="mt-8"><span class="title-gradient">The goal is less distance between intent and outcome.</span></h1>
 
 <div v-click class="mt-12 text-3xl">Thank you 💛</div>
-<div v-click class="mt-3 muted">Questions, comments, or strongly held opinions about vim are welcome.</div>
+<div v-click class="mt-3 muted">Questions, comments, or workflows you think we should simplify next.</div>
 
 <!--
 Close exactly here if time is tight.
-Optional final callback: “If your workflow feels slow, the bottleneck may not be you — it may be the interface.”
+Optional final callback: “If your workflow feels slow, the bottleneck may not be the person — it may be the interface.”
 -->

@@ -3,27 +3,27 @@ layout: center
 class: text-center
 ---
 
-<div class="kicker mx-auto mb-8">Then I looked back at AI and thought…</div>
+<div class="kicker mx-auto mb-8">Look at AI through the same lens and…</div>
 
-# Wait. This is the <span class="accent-pink">same problem</span>.
+# Wait. This is the <span class="accent-pink">same interface problem</span>.
 
 <div class="grid grid-cols-2 gap-8 mt-10 text-left">
   <div v-click class="card">
     <div class="text-5xl mb-3">🧱</div>
     <div class="text-2xl font-bold">Jira friction</div>
-    <div class="muted mt-2">The work was trapped behind a UI that didn’t match my loop.</div>
+    <div class="muted mt-2">The update was trapped behind a UI that didn’t match the work loop.</div>
   </div>
   <div v-click class="card">
     <div class="text-5xl mb-3">🤖</div>
     <div class="text-2xl font-bold">AI friction</div>
-    <div class="muted mt-2">The model was trapped behind a chat surface that didn’t match my loop.</div>
+    <div class="muted mt-2">The model was trapped behind a chat surface that didn’t match the development loop.</div>
   </div>
 </div>
 
-<div v-click class="mt-10 text-3xl font-bold">So the wrapper idea became an agent IDE.</div>
+<div v-click class="mt-10 text-3xl font-bold">So the same interface principle became an agent IDE: reduce translation, preserve context, shorten the loop.</div>
 
 <!--
-This is the bridge into the AI IDE portion. Make it feel inevitable rather than random: the same design principle applied twice.
+This is the bridge into the AI IDE portion. Make it feel inevitable rather than random: the same service-design principle applied twice.
 -->
 
 ---
@@ -38,8 +38,10 @@ class: text-center
 />
 
 <!--
-This is the strongest analogy in the talk. AI should feel native to the work.
-Not like a chatbot pasted beside the work.
+The point is not this specific tool.
+The point is the design direction:
+bring the agent closer to the code, the context, the commands, and the verification loop.
+AI becomes more useful when it participates in the workflow instead of sitting outside it.
 -->
 
 ---
@@ -47,14 +49,14 @@ layout: two-cols
 layoutClass: gap-10
 ---
 
-# Steep learning curve.<br><span class="accent">Worth it.</span>
+# Integration has a cost.<br><span class="accent">Friction has a cost too.</span>
 
-<div class="mt-6 text-2xl muted">I collaborated with DJ Khaled:</div>
+<div class="mt-6 text-2xl muted">The pattern repeated through iteration:</div>
 
 <div class="mt-8 grid gap-5">
   <div class="card flex items-center gap-5">
-    <img class="w-20 h-20 rounded-2xl" src="/images/another-one-logo.png" alt="Another One logo" />
-    <div class="text-3xl font-bold">Another One</div>
+    <img class="w-20 h-20 rounded-2xl" src="/images/another-one-logo.png" alt="Workflow wrapper logo" />
+    <div class="text-3xl font-bold">Wrapper iteration</div>
   </div>
 
   <div class="text-5xl font-black accent-pink text-center">+</div>
@@ -75,7 +77,9 @@ layoutClass: gap-10
 />
 
 <!--
-Emphasize iteration. The first wrapper was not perfect. The IDE emerged from repeated friction removal.
+Be honest that better interfaces are not free.
+There is design cost, integration cost, and maintenance cost.
+But recurring friction also has a cost — paid by every person, every day, in tiny interruptions.
 -->
 
 ---
@@ -83,7 +87,7 @@ layout: center
 class: text-center
 ---
 
-# What changed?
+# What improved when the interface matched the work?
 
 <div class="grid grid-cols-2 gap-8 mt-10 text-left">
   <div v-click class="card">
@@ -98,8 +102,8 @@ class: text-center
   </div>
 </div>
 
-<div v-click class="mt-12 text-3xl font-bold">I got back to that vim feeling: intent turning into action almost instantly.</div>
+<div v-click class="mt-12 text-3xl font-bold">The useful pattern: design for intent turning into action with as little translation as possible.</div>
 
 <!--
-This is the payoff. Bring it back to the beginning: vim wasn’t the destination, it was the reference feeling.
+This is the payoff. Bring it back to the beginning: vim wasn’t the destination, it was a reference feeling for a workflow with very little translation.
 -->

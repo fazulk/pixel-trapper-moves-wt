@@ -194,26 +194,35 @@
 }
 
 .ai-friction-slide h1 {
-  font-size: 2.75rem;
-  line-height: .95;
+  font-size: 2.45rem;
+  line-height: .98;
 }
 
 .ai-friction-slide .card {
   padding: .9rem 1rem;
 }
 
+.ai-friction-slide .ai-tax-list {
+  gap: .4rem;
+  margin-top: .55rem;
+}
+
 .ai-friction-slide .ai-tax-list .mini-card {
-  padding: .55rem .8rem;
-  border-radius: .85rem;
-  font-size: 1.18rem;
-  line-height: 1.16;
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .42rem .7rem;
+  border-radius: .75rem;
+  font-size: 1.02rem;
+  line-height: 1.08;
 }
 
 .ai-friction-slide .click-tax {
-  width: 1.8rem;
-  height: 1.8rem;
-  margin-right: .45rem;
-  font-size: 1rem;
+  flex: 0 0 1.55rem;
+  width: 1.55rem;
+  height: 1.55rem;
+  margin-right: 0;
+  font-size: .86rem;
 }
 
 .ai-friction-slide .stamp {
