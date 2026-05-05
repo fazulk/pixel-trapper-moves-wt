@@ -32,7 +32,6 @@ class: text-center
 ---
 
 <img
-  v-click
   class="mx-auto w-[1080px] max-w-full rounded-2xl shadow-2xl border border-white/15"
   src="/images/ai-feel-like.png"
   alt="Screenshot of pi showing an AI agent IDE workflow"
@@ -44,43 +43,36 @@ Not like a chatbot pasted beside the work.
 -->
 
 ---
-layout: default
+layout: two-cols
+layoutClass: gap-10
 ---
 
-# Building the agent IDE meant designing for feedback loops
+# Steep learning curve.<br><span class="accent">Worth it.</span>
 
-<div class="grid grid-cols-4 gap-4 mt-8">
-  <div v-click class="card">
-    <div class="text-4xl mb-2">📚</div>
-    <div class="text-xl font-bold">Context</div>
-    <div class="muted text-sm mt-1">Repo, tasks, commands, history</div>
+<div class="mt-6 text-2xl muted">I collaborated with DJ Khaled:</div>
+
+<div class="mt-8 grid gap-5">
+  <div class="card flex items-center gap-5">
+    <img class="w-20 h-20 rounded-2xl" src="/images/another-one-logo.png" alt="Another One logo" />
+    <div class="text-3xl font-bold">Another One</div>
   </div>
-  <div v-click class="card">
-    <div class="text-4xl mb-2">👀</div>
-    <div class="text-xl font-bold">Visibility</div>
-    <div class="muted text-sm mt-1">What changed? Why?</div>
-  </div>
-  <div v-click class="card">
-    <div class="text-4xl mb-2">🧯</div>
-    <div class="text-xl font-bold">Control</div>
-    <div class="muted text-sm mt-1">Approve, interrupt, redirect</div>
-  </div>
-  <div v-click class="card">
-    <div class="text-4xl mb-2">🔁</div>
-    <div class="text-xl font-bold">Iteration</div>
-    <div class="muted text-sm mt-1">Fast loops beat perfect prompts</div>
+
+  <div class="text-5xl font-black accent-pink text-center">+</div>
+
+  <div class="card flex items-center gap-5">
+    <img class="w-20 h-20" src="https://cdn.simpleicons.org/rust/FFFFFF" alt="Rust logo" />
+    <div class="text-3xl font-bold">Rust</div>
   </div>
 </div>
 
-```mermaid {theme: 'dark', scale: 0.8}
-flowchart LR
-  A[Notice friction] --> B[Wrap the rough edge]
-  B --> C[Use it for real work]
-  C --> D[Find the next tiny papercut]
-  D --> A
-```
+::right::
 
-<div v-click class="mt-3 text-2xl font-bold text-center">It took weeks of tuning because flow is felt in milliseconds.</div>
+<img
+  v-click
+  class="mt-6 w-full rounded-2xl shadow-2xl border border-white/15"
+  src="/images/steep-learning-curve-meme.png"
+  alt="Steep learning curve meme"
+/>
 
 <!--
 Emphasize iteration. The first wrapper was not perfect. The IDE emerged from repeated friction removal.
