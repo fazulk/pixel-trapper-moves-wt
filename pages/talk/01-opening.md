@@ -31,7 +31,7 @@ transition: fade-out
 <div class="grid grid-cols-4 gap-5 text-left">
   <div v-click class="card">
     <div class="text-5xl mb-3">🌊</div>
-    <div class="text-2xl font-bold">I had flow</div>
+    <div class="text-2xl font-bold">Flow</div>
     <div class="muted mt-2">Vim made<br> thought → action<br> feel tiny.</div>
   </div>
   <div v-click class="card">
@@ -50,9 +50,9 @@ transition: fade-out
     <div class="muted mt-2">Ol' Reliable Jira</div>
   </div>
   <div v-click class="card pulse-soft">
-    <div class="text-5xl mb-3">🛠️</div>
-    <div class="text-2xl font-bold">I wrapped it</div>
-    <div class="muted mt-2">Until the work felt close again. You know like a present.</div>
+    <div class="text-5xl mb-3">🎁</div>
+    <div class="text-2xl font-bold">Rip and Wrap </div>
+    <div class="muted mt-2">You know, like a present.</div>
   </div>
 </div>
 

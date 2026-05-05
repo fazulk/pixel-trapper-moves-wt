@@ -4,26 +4,21 @@ layout: default
 
 # Lessons I’d steal from this
 
-<div class="grid grid-cols-2 gap-6 mt-8">
-  <div v-click class="card">
+<div class="grid grid-cols-2 gap-6 mt-8 items-stretch">
+  <div v-click class="card min-h-[210px] flex flex-col justify-center">
     <div class="text-4xl mb-3">🌊</div>
     <div class="text-2xl font-bold">Flow is a product requirement</div>
     <div class="muted mt-2">Not a luxury for people with mechanical keyboards.</div>
   </div>
-  <div v-click class="card">
+  <div v-click class="card min-h-[210px] flex flex-col justify-center">
     <div class="text-4xl mb-3">📏</div>
     <div class="text-2xl font-bold">Optimize distance, not just features</div>
     <div class="muted mt-2">The best feature may be one fewer step.</div>
   </div>
-  <div v-click class="card">
+  <div v-click class="card min-h-[210px] flex flex-col justify-center col-span-2 mx-auto w-[calc(50%-0.75rem)]">
     <div class="text-4xl mb-3">🤖</div>
     <div class="text-2xl font-bold">AI needs workflow design</div>
     <div class="muted mt-2">A powerful model in a bad loop still feels slow.</div>
-  </div>
-  <div v-click class="card">
-    <div class="text-4xl mb-3">🛠️</div>
-    <div class="text-2xl font-bold">Wrap friction before replacing systems</div>
-    <div class="muted mt-2">Bridges are underrated. Also cheaper than organizational knife fights.</div>
   </div>
 </div>
 
