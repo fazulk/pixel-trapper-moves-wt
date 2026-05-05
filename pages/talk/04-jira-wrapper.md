@@ -51,16 +51,10 @@ class: text-center
 
 <v-switch>
   <template #1>
-    <div class="mt-5 flex items-center justify-center gap-8">
-      <img class="h-[285px] object-contain" src="/images/vanilla-ice.png" alt="Vanilla Ice" />
-      <img class="h-[285px] object-contain" src="/images/wu-tang-clan.png" alt="Wu-Tang Clan" />
-    </div>
-  </template>
-  <template #2>
-    <img class="mt-5 mx-auto max-h-[350px] object-contain" src="/images/app-screenshot-placeholder.svg" alt="Placeholder screenshot of our Jira wrapper app" />
+    <img class="mt-5 mx-auto max-h-[350px] object-contain" src="/images/app-screenshot-placeholder.png" alt="Screenshot of our Jira wrapper app" />
   </template>
   <template #3>
-    <img class="mt-5 mx-auto max-h-[350px] object-contain" src="/images/app-screenshot-placeholder.svg" alt="Placeholder screenshot of our Jira wrapper app" />
+    <img class="mt-5 mx-auto max-h-[350px] object-contain" src="/images/app-screenshot-placeholder.png" alt="Screenshot of our Jira wrapper app" />
   </template>
 </v-switch>
 

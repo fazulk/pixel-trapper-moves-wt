@@ -39,7 +39,7 @@ transition: fade-out
       <img class="ai-head dario" src="/people/dario-amodei.png" alt="Dario Amodei head" />
       <img class="ai-head sam" src="/people/sam-altman.png" alt="Sam Altman head" />
     </div>
-    <div class="text-2xl font-bold">Chat Jippity & Claudius Code</div>
+    <div class="text-2xl font-bold">Chat GPT & Claude Code</div>
     <div class="muted mt-2">Powerful model. Weirdly clunky ritual.</div>
   </div>
   <div v-click class="card">
