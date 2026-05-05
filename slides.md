@@ -1,662 +1,582 @@
 ---
-# try also 'default' to start simple
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: The Interface Is the Bottleneck
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# apply UnoCSS classes to the current slide
+  ## The Interface Is the Bottleneck
+  A short town-hall talk about flow, AI agents, Jira friction, and why the best tools disappear.
 class: text-center
-# https://sli.dev/features/drawing
+colorSchema: dark
+transition: slide-left
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
-# enable Comark Syntax: https://comark.dev/syntax/markdown
-comark: true
-# duration of the presentation
-duration: 35min
+duration: 20min
+mdc: true
 ---
 
-# Welcome to Slidev
+<div class="confetti"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 
-Presentation slides for developers
+<div class="kicker mx-auto mb-7">🏙️ Tech town hall · 20 minutes · surprisingly few Jira screenshots</div>
 
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
-</div>
+# <span class="title-gradient">The Interface<br/>Is the Bottleneck</span>
 
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
+<div class="mt-7 text-2xl muted">Chasing flow in the age of AI agents</div>
+
+<div class="mt-12 flex justify-center gap-7">
+  <div v-motion :initial="{ y: 30, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 250 } }" class="orb floaty">⌨️</div>
+  <div v-motion :initial="{ y: 30, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 450 } }" class="orb floaty-2">🤖</div>
+  <div v-motion :initial="{ y: 30, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 650 } }" class="orb floaty">🧱</div>
 </div>
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+Open light and personal. This is not a vendor comparison and not “AI tools are cool.”
+It is a story about flow: I had it, I lost it, and I rebuilt my environment until I could get it back.
 -->
 
 ---
+layout: center
+class: text-center
 transition: fade-out
 ---
 
-# What is Slidev?
+<div class="kicker mx-auto mb-8">The whole talk in one emotionally suspicious timeline</div>
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+<div class="grid grid-cols-4 gap-5 text-left">
+  <div v-click class="card">
+    <div class="text-5xl mb-3">🌊</div>
+    <div class="text-2xl font-bold">I had flow</div>
+    <div class="muted mt-2">Vim made thought → action feel tiny.</div>
+  </div>
+  <div v-click class="card">
+    <div class="text-5xl mb-3">🤖</div>
+    <div class="text-2xl font-bold">AI arrived</div>
+    <div class="muted mt-2">Powerful model. Weirdly clunky ritual.</div>
+  </div>
+  <div v-click class="card">
+    <div class="text-5xl mb-3">🧱</div>
+    <div class="text-2xl font-bold">Jira got louder</div>
+    <div class="muted mt-2">Not evil. Just very... clickable.</div>
+  </div>
+  <div v-click class="card pulse-soft">
+    <div class="text-5xl mb-3">🛠️</div>
+    <div class="text-2xl font-bold">I wrapped it</div>
+    <div class="muted mt-2">Until the work felt close again.</div>
+  </div>
+</div>
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
+<div v-click class="mt-10 text-3xl font-bold">
+  I wasn’t chasing tools. I was chasing <span class="accent">flow</span>.
+</div>
 
 <!--
-Here is another comment.
+Set the emotional arc. The audience should know where we’re going immediately.
+The joke is that “clickable” is both a product virtue and a developer tax.
 -->
 
 ---
-transition: slide-up
-level: 2
+layout: statement
+class: text-center
 ---
 
-# Navigation
+<div class="text-2xl muted mb-5">Core thesis</div>
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
+# <span class="title-gradient">Productivity is often limited by the distance between intent and execution.</span>
 
-## Keyboard Shortcuts
+<div v-click class="mt-12 intent-path text-left">
+  <div class="card text-center">
+    <div class="text-5xl">🧠</div>
+    <div class="text-xl font-bold mt-2">Intent</div>
+  </div>
+  <div class="arrow-line"></div>
+  <div class="card text-center">
+    <div class="text-5xl">🧰</div>
+    <div class="text-xl font-bold mt-2">Interface</div>
+  </div>
+  <div class="arrow-line"></div>
+  <div class="card text-center">
+    <div class="text-5xl">✅</div>
+    <div class="text-xl font-bold mt-2">Outcome</div>
+  </div>
+</div>
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
+<div v-click class="mt-8 text-xl muted">The interface is where momentum either survives… or goes to open seventeen tabs.</div>
 
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+<!--
+This is the lens for the rest of the talk. We usually talk about compute, model quality, process, or features.
+But the day-to-day bottleneck is often the interface between what I mean and what the system does.
+-->
 
 ---
 layout: two-cols
-layoutClass: gap-16
+layoutClass: gap-12
+transition: slide-up
 ---
 
-# Table of contents
+# Act I: Vim taught me what speed actually is
 
-You can use the `Toc` component to generate a table of contents for your slides:
+<div class="text-xl muted mt-4">I used to think speed meant typing faster.</div>
 
-```html
-<Toc minDepth="1" maxDepth="1" />
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
+<div v-click class="mt-8 card">
+  <div class="text-4xl mb-2">⌨️💨</div>
+  <div class="text-2xl font-bold">Then vim motions happened.</div>
+  <div class="muted mt-2">And my mouse started updating its LinkedIn.</div>
+</div>
 
 ::right::
 
-<Toc text-sm minDepth="1" maxDepth="2" />
+<div class="grid gap-4 mt-7">
+  <div v-click class="mini-card"><span class="accent">Less mouse</span> → fewer physical interruptions</div>
+  <div v-click class="mini-card"><span class="accent-cyan">Composable commands</span> → tiny language for intent</div>
+  <div v-click class="mini-card"><span class="accent-green">Muscle memory</span> → no negotiation with the UI</div>
+  <div v-click class="mini-card"><span class="accent-pink">Flow</span> → stay on the problem</div>
+</div>
 
----
-layout: image-right
-image: https://cover.sli.dev
----
-
-# Code
-
-Use code snippets and get the highlighting directly, and even types hover!
-
-```ts [filename-example.ts] {all|4|6|6-7|9|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
-<style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
+<div v-click class="mt-7 text-2xl font-bold">Once the interface got out of the way, my brain stayed on the problem.</div>
 
 <!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
+Do not make this a vim superiority slide. Make it relatable: every person has had a tool become transparent.
+Vim is just my example of a low-friction interface.
 -->
-
----
-level: 2
----
-
-# Shiki Magic Move
-
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
-
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
-
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>`, `<BlueSky/>`, and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you press <kbd>space</kbd> or <kbd>right</kbd>, or click outside the slide on the right.
-
-```html
-<div v-click>This shows up when you trigger a click animation.</div>
-```
-
-</div>
-
-<p v-click>
-You can also add modifiers to change the animation:
-</p>
-
-<div class="grid gap-3 mt-4 text-sm" style="grid-template-columns: repeat(3, 1fr) 1.5fr 1fr">
-  <div v-after.up class="p-3 rounded border border-primary/20 bg-primary/10">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.up</div>
-    <div>Slide from bottom</div>
-  </div>
-  <div v-click.fade-in class="p-3 rounded border border-primary/30 bg-primary/15">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.fade-in</div>
-    <div>Fade in</div>
-  </div>
-  <div v-click.fade class="p-3 rounded border border-primary/40 bg-primary/20">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.fade</div>
-    <div>Dim (0.5 opacity)</div>
-  </div>
-  <div v-click.fade.right.scale class="p-3 rounded border border-primary/50 bg-primary/25">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.fade.right.scale</div>
-    <div>Composed</div>
-  </div>
-  <div v-click.none class="p-3 rounded border border-primary/60 bg-primary/30">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.none</div>
-    <div>No transition</div>
-  </div>
-</div>
-
-<v-click>
-
-The <span v-mark.red="7"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="8">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div v-click mt-12>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
-
-</div>
-
----
-
-# Motions
-
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn more](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# $\LaTeX$
-
-$\LaTeX$ is supported out-of-box. Powered by [$\KaTeX$](https://katex.org/).
-
-<div h-3 />
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
-
----
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
----
-
-# Draggable Elements
-
-Double-click on the draggable elements to edit their positions.
-
-<br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-src: ./pages/imported-slides.md
-hide: false
----
-
----
-
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
 
 ---
 layout: center
 class: text-center
 ---
 
-# Learn More
+<div class="kicker mx-auto mb-8">The tiny miracle</div>
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+<div class="grid grid-cols-3 gap-8 items-center">
+  <div v-click class="card">
+    <div class="text-6xl mb-3">🧠</div>
+    <div class="text-3xl font-bold">Think</div>
+    <div class="muted mt-2">“change inside quotes”</div>
+  </div>
+  <div v-click class="card">
+    <div class="text-6xl mb-3">⌨️</div>
+    <div class="text-3xl font-bold">Express</div>
+    <code class="text-xl">ci&quot;</code>
+  </div>
+  <div v-click class="card">
+    <div class="text-6xl mb-3">✨</div>
+    <div class="text-3xl font-bold">Done</div>
+    <div class="muted mt-2">No modal scavenger hunt.</div>
+  </div>
+</div>
 
-<PoweredBySlidev mt-10 />
+<div v-click class="mt-12 big-word title-gradient">tiny gap, big joy</div>
+
+<!--
+This is the first big emotional point: the joy is not “keyboard wizardry.”
+The joy is that the system feels like it understands the shape of your intent.
+-->
+
+---
+layout: two-cols-header
+layoutClass: gap-10
+---
+
+# Act II: AI gave me leverage… and a new toll booth
+
+::left::
+
+<div class="card mt-5">
+  <div class="text-5xl mb-3 wiggle">🤖</div>
+  <div class="text-2xl font-bold">The model was fast.</div>
+  <div class="muted mt-2">It could generate, explain, refactor, summarize.</div>
+</div>
+
+<div v-click class="mt-5 text-2xl font-bold accent">Great! Surely we are done.</div>
+<div v-click class="mt-3 stamp">narrator: no</div>
+
+::right::
+
+<div class="grid gap-3 mt-5">
+  <div v-click class="mini-card"><span class="click-tax">1</span> Gather context</div>
+  <div v-click class="mini-card"><span class="click-tax">2</span> Switch editor → browser → terminal</div>
+  <div v-click class="mini-card"><span class="click-tax">3</span> Re-explain the repo like it has amnesia</div>
+  <div v-click class="mini-card"><span class="click-tax">4</span> Babysit the output</div>
+  <div v-click class="mini-card"><span class="click-tax">5</span> Copy/paste until your soul compiles</div>
+</div>
+
+<!--
+The twist: AI improved capability but added interface rituals.
+Say: “The model was fast, but my workflow around the model was slow.”
+-->
+
+---
+layout: statement
+class: text-center
+transition: fade
+---
+
+<div class="text-3xl muted mb-8">The uncomfortable sentence</div>
+
+# The model was fast, but my <span class="accent-pink">workflow around the model</span> was slow.
+
+<div v-click class="mt-12 grid grid-cols-3 gap-6">
+  <div class="card">
+    <div class="text-5xl">🏎️</div>
+    <div class="text-xl font-bold mt-2">Racecar engine</div>
+  </div>
+  <div class="card">
+    <div class="text-5xl">🍟</div>
+    <div class="text-xl font-bold mt-2">Drive-thru interface</div>
+  </div>
+  <div class="card">
+    <div class="text-5xl">🐢</div>
+    <div class="text-xl font-bold mt-2">Developer velocity</div>
+  </div>
+</div>
+
+<div v-click class="mt-9 text-xl muted">AI gave me leverage, but the interface taxed every interaction.</div>
+
+<!--
+This is a memorable line. Pause after “workflow around the model was slow.”
+The racecar/drive-thru/turtle metaphor is intentionally silly; let the slide do the joke.
+-->
+
+---
+layout: two-cols
+layoutClass: gap-12
+---
+
+# Jira made the friction impossible to ignore
+
+<div class="text-xl muted mt-4">Important disclaimer:</div>
+
+<div v-click class="card mt-5">
+  <div class="text-3xl font-bold">Jira is powerful.</div>
+  <div class="muted mt-2">Powerful like a spaceship cockpit is powerful.</div>
+</div>
+
+<div v-click class="card mt-5">
+  <div class="text-3xl font-bold">But power ≠ flow.</div>
+  <div class="muted mt-2">Sometimes power means 11 dropdowns and a tiny loading spinner contemplating its life choices.</div>
+</div>
+
+::right::
+
+<div class="mt-10 flex justify-center">
+  <div>
+    <div class="battery"><div class="battery-fill"></div></div>
+    <div class="text-center mt-4 text-xl font-bold accent-pink">Working memory</div>
+  </div>
+</div>
+
+<div v-click class="mt-10 text-3xl font-bold text-center">Every time I opened Jira, I felt my working memory drain.</div>
+
+<!--
+Keep this kind. The point is not “Jira bad.” The point is that a powerful general-purpose UI can be a poor fit for a keyboard-first coding loop.
+-->
+
+---
+layout: center
+class: text-center
+---
+
+# So I built a wrapper
+
+<div class="text-2xl muted mt-4">Not to replace the system. To put a better interface in front of it.</div>
+
+<div class="grid grid-cols-2 gap-8 mt-10 text-left">
+  <div v-click class="card">
+    <div class="text-5xl mb-3">🧱</div>
+    <div class="text-2xl font-bold">Jira remained the source of truth</div>
+    <div class="muted mt-2">Same data. Same workflow requirements. Fewer browser side quests.</div>
+  </div>
+  <div v-click class="card pulse-soft">
+    <div class="text-5xl mb-3">⌨️</div>
+    <div class="text-2xl font-bold">My wrapper matched how I think</div>
+    <div class="muted mt-2">Keyboard-first, low latency, close to code.</div>
+  </div>
+</div>
+
+<div v-click class="mt-10 text-3xl font-bold">The breakthrough was not a new backend. It was a <span class="accent">shorter path</span>.</div>
+
+<!--
+This echoes migration empathy: I did not throw out the system. I built a bridge between the system and the way I work.
+-->
+
+---
+layout: two-cols-header
+layoutClass: gap-10
+---
+
+# Same Jira, different surface area
+
+::left::
+
+<div class="text-xl font-bold mb-4">Before</div>
+
+<div v-clicks class="grid gap-3">
+  <div class="mini-card">Open browser</div>
+  <div class="mini-card">Find board</div>
+  <div class="mini-card">Find issue</div>
+  <div class="mini-card">Wait for panel</div>
+  <div class="mini-card">Click tiny thing</div>
+  <div class="mini-card">Forget what I was coding</div>
+</div>
+
+::right::
+
+<div class="text-xl font-bold mb-4">After</div>
+
+````md magic-move {lines: true}
+```bash
+# thought: what am I working on?
+```
+```bash
+$ issues mine
+```
+```bash
+$ issues mine --status "In Progress"
+```
+```bash
+$ issue open PAY-123
+```
+```bash
+$ issue note PAY-123 "Found the flaky edge case"
+```
+````
+
+<div v-click class="mt-5 card">
+  <span class="accent-green font-bold">Flow restored:</span> issue context stayed near code context.
+</div>
+
+<!--
+Use this as an illustrative sketch, not necessarily exact commands.
+The important contrast is UI tourism versus direct expression of intent.
+-->
+
+---
+layout: center
+class: text-center
+---
+
+<div class="kicker mx-auto mb-8">Then I looked back at AI and thought…</div>
+
+# Wait. This is the <span class="accent-pink">same problem</span>.
+
+<div class="grid grid-cols-2 gap-8 mt-10 text-left">
+  <div v-click class="card">
+    <div class="text-5xl mb-3">🧱</div>
+    <div class="text-2xl font-bold">Jira friction</div>
+    <div class="muted mt-2">The work was trapped behind a UI that didn’t match my loop.</div>
+  </div>
+  <div v-click class="card">
+    <div class="text-5xl mb-3">🤖</div>
+    <div class="text-2xl font-bold">AI friction</div>
+    <div class="muted mt-2">The model was trapped behind a chat surface that didn’t match my loop.</div>
+  </div>
+</div>
+
+<div v-click class="mt-10 text-3xl font-bold">So the wrapper idea became an agent IDE.</div>
+
+<!--
+This is the bridge into the AI IDE portion. Make it feel inevitable rather than random: the same design principle applied twice.
+-->
+
+---
+layout: two-cols
+layoutClass: gap-12
+---
+
+# What I wanted AI to feel like
+
+<div class="text-2xl muted mt-4">Less chatbot. More vim motions.</div>
+
+<div v-click class="card mt-8">
+  <div class="text-4xl mb-3">🧩</div>
+  <div class="text-2xl font-bold">Composable</div>
+  <div class="muted mt-2">Small actions that combine into real work.</div>
+</div>
+
+<div v-click class="card mt-5">
+  <div class="text-4xl mb-3">🎛️</div>
+  <div class="text-2xl font-bold">Controlled</div>
+  <div class="muted mt-2">Humans steer. Agents execute. Nobody free-solos production.</div>
+</div>
+
+::right::
+
+<div class="mt-6 grid gap-5">
+  <div v-click class="mini-card">
+    <div class="text-sm muted mb-1">Vim-ish</div>
+    <div class="text-2xl"><code>operator</code> + <code>motion</code> + <code>object</code></div>
+  </div>
+  <div v-click class="mini-card">
+    <div class="text-sm muted mb-1">Agent-ish</div>
+    <div class="text-2xl"><code>intent</code> + <code>context</code> + <code>guardrails</code></div>
+  </div>
+  <div v-click class="card pulse-soft">
+    <div class="text-2xl font-bold accent">Think → express → review → ship</div>
+    <div class="muted mt-2">A tight feedback loop, not a séance with autocomplete.</div>
+  </div>
+</div>
+
+<!--
+This is the strongest analogy in the talk. AI should feel native to the work.
+Not like a chatbot pasted beside the work.
+-->
+
+---
+layout: default
+---
+
+# Building the agent IDE meant designing for feedback loops
+
+<div class="grid grid-cols-4 gap-4 mt-8">
+  <div v-click class="card">
+    <div class="text-4xl mb-2">📚</div>
+    <div class="text-xl font-bold">Context</div>
+    <div class="muted text-sm mt-1">Repo, tasks, commands, history</div>
+  </div>
+  <div v-click class="card">
+    <div class="text-4xl mb-2">👀</div>
+    <div class="text-xl font-bold">Visibility</div>
+    <div class="muted text-sm mt-1">What changed? Why?</div>
+  </div>
+  <div v-click class="card">
+    <div class="text-4xl mb-2">🧯</div>
+    <div class="text-xl font-bold">Control</div>
+    <div class="muted text-sm mt-1">Approve, interrupt, redirect</div>
+  </div>
+  <div v-click class="card">
+    <div class="text-4xl mb-2">🔁</div>
+    <div class="text-xl font-bold">Iteration</div>
+    <div class="muted text-sm mt-1">Fast loops beat perfect prompts</div>
+  </div>
+</div>
+
+```mermaid {theme: 'dark', scale: 0.8}
+flowchart LR
+  A[Notice friction] --> B[Wrap the rough edge]
+  B --> C[Use it for real work]
+  C --> D[Find the next tiny papercut]
+  D --> A
+```
+
+<div v-click class="mt-3 text-2xl font-bold text-center">It took weeks of tuning because flow is felt in milliseconds.</div>
+
+<!--
+Emphasize iteration. The first wrapper was not perfect. The IDE emerged from repeated friction removal.
+-->
+
+---
+layout: two-cols-header
+layoutClass: gap-8
+---
+
+# The old loop vs. the flow loop
+
+::left::
+
+<div class="text-xl font-bold mb-4">Old loop: tab cardio</div>
+<div class="grid gap-3">
+  <div v-click class="mini-card">Editor</div>
+  <div v-click class="mini-card">Browser</div>
+  <div v-click class="mini-card">Terminal</div>
+  <div v-click class="mini-card">Jira</div>
+  <div v-click class="mini-card">Chatbot</div>
+  <div v-click class="mini-card">“Where was I?”</div>
+</div>
+
+::right::
+
+<div class="text-xl font-bold mb-4">Flow loop: close to the work</div>
+<div class="grid gap-3">
+  <div v-click class="card">🧠 Intent</div>
+  <div v-click class="card">📚 Context already attached</div>
+  <div v-click class="card">🤖 Agent does bounded work</div>
+  <div v-click class="card">👀 Human reviews diff</div>
+  <div v-click class="card pulse-soft">✅ Momentum survives</div>
+</div>
+
+<!--
+“Tab cardio” should get a laugh. This slide summarizes why interface consolidation mattered.
+-->
+
+---
+layout: center
+class: text-center
+---
+
+# What changed?
+
+<div class="grid grid-cols-3 gap-6 mt-10 text-left">
+  <div v-click class="card">
+    <div class="text-5xl mb-3">⏱️</div>
+    <div class="text-2xl font-bold">Latency dropped</div>
+    <div class="muted mt-2">Not just network latency. Human decision latency.</div>
+  </div>
+  <div v-click class="card">
+    <div class="text-5xl mb-3">🧠</div>
+    <div class="text-2xl font-bold">Context stayed warm</div>
+    <div class="muted mt-2">Working memory stopped falling out of my pockets.</div>
+  </div>
+  <div v-click class="card">
+    <div class="text-5xl mb-3">🌊</div>
+    <div class="text-2xl font-bold">The system disappeared</div>
+    <div class="muted mt-2">Which is the nicest compliment an interface can receive.</div>
+  </div>
+</div>
+
+<div v-click class="mt-12 text-3xl font-bold">I got back to that vim feeling: intent turning into action almost instantly.</div>
+
+<!--
+This is the payoff. Bring it back to the beginning: vim wasn’t the destination, it was the reference feeling.
+-->
+
+---
+layout: default
+---
+
+# Lessons I’d steal from this
+
+<div class="grid grid-cols-2 gap-6 mt-8">
+  <div v-click class="card">
+    <div class="text-4xl mb-3">🌊</div>
+    <div class="text-2xl font-bold">Flow is a product requirement</div>
+    <div class="muted mt-2">Not a luxury for people with mechanical keyboards.</div>
+  </div>
+  <div v-click class="card">
+    <div class="text-4xl mb-3">📏</div>
+    <div class="text-2xl font-bold">Optimize distance, not just features</div>
+    <div class="muted mt-2">The best feature may be one fewer step.</div>
+  </div>
+  <div v-click class="card">
+    <div class="text-4xl mb-3">🤖</div>
+    <div class="text-2xl font-bold">AI needs workflow design</div>
+    <div class="muted mt-2">A powerful model in a bad loop still feels slow.</div>
+  </div>
+  <div v-click class="card">
+    <div class="text-4xl mb-3">🛠️</div>
+    <div class="text-2xl font-bold">Wrap friction before replacing systems</div>
+    <div class="muted mt-2">Bridges are underrated. Also cheaper than organizational knife fights.</div>
+  </div>
+</div>
+
+<!--
+These are the general-purpose takeaways for a town hall. They apply beyond my tools.
+-->
+
+---
+layout: statement
+class: text-center
+transition: fade-out
+---
+
+<div class="confetti"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+<div class="text-2xl muted mb-6">Final thought</div>
+
+# The goal wasn’t to build another tool.
+
+<h1 v-click class="mt-8"><span class="title-gradient">The goal was to make the tool disappear.</span></h1>
+
+<div v-click class="mt-12 text-3xl">Thank you 💛</div>
+<div v-click class="mt-3 muted">Questions, comments, or strongly held opinions about vim are welcome.</div>
+
+<!--
+Close exactly here if time is tight.
+Optional final callback: “If your workflow feels slow, the bottleneck may not be you — it may be the interface.”
+-->
