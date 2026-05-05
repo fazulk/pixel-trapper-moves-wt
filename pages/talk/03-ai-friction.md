@@ -15,7 +15,7 @@ class: ai-friction-slide
 </div>
 
 <div v-click class="mt-4 text-2xl font-bold accent">Great! Surely we are done. And SO SATISFIED</div>
-<div v-click class="mt-2 stamp">NOT TODAY BOOMER</div>
+<div v-click class="mt-2 stamp">NOT TODAY BRUH</div>
 
 ::right::
 
