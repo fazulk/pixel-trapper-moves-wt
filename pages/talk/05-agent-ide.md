@@ -83,26 +83,36 @@ But recurring friction also has a cost — paid by every person, every day, in t
 -->
 
 ---
-layout: center
-class: text-center
+layout: default
+class: text-center takeaways-slide
 ---
 
-# What improved when the interface matched the work?
+# Takeaways
 
-<div class="grid grid-cols-2 gap-8 mt-10 text-left">
-  <div v-click class="card">
-    <div class="text-5xl mb-3">⏱️</div>
-    <div class="text-2xl font-bold">Latency dropped</div>
-    <div class="muted mt-2">Not just network latency. Human decision latency.</div>
+<div class="grid grid-cols-2 gap-4 mt-4 text-left">
+  <div v-click class="card min-h-[118px]">
+    <div class="text-3xl mb-1">⏱️</div>
+    <div class="text-xl leading-tight font-bold">Latency drops</div>
+    <div class="muted text-lg leading-snug mt-1">Not just network latency. Human decision latency.</div>
   </div>
-  <div v-click class="card">
-    <div class="text-5xl mb-3">🌊</div>
-    <div class="text-2xl font-bold">The system disappeared</div>
-    <div class="muted mt-2">Which is the nicest compliment an interface can receive.</div>
+  <div v-click class="card min-h-[118px]">
+    <div class="text-3xl mb-1">🌊</div>
+    <div class="text-xl leading-tight font-bold">The system disappeared</div>
+    <div class="muted text-lg leading-snug mt-1">Which is the nicest compliment an interface can receive.</div>
+  </div>
+  <div v-click class="card min-h-[118px]">
+    <div class="text-3xl mb-1">📏</div>
+    <div class="text-xl leading-tight font-bold">Optimize distance, not just features</div>
+    <div class="muted text-lg leading-snug mt-1">The best feature may be one fewer step.</div>
+  </div>
+  <div v-click class="card min-h-[118px]">
+    <div class="text-3xl mb-1">🤖</div>
+    <div class="text-xl leading-tight font-bold">AI needs workflow design</div>
+    <div class="muted text-lg leading-snug mt-1">A powerful model in a bad loop still creates coordination work.</div>
   </div>
 </div>
 
-<div v-click class="mt-12 text-3xl font-bold">The useful pattern: design for intent turning into action with as little translation as possible.</div>
+<div v-click class="mx-auto mt-4 max-w-4xl text-xl leading-tight font-bold">The useful pattern: design for intent turning into action with as little translation as possible.</div>
 
 <!--
 This is the payoff. Bring it back to the beginning: vim wasn’t the destination, it was a reference feeling for a workflow with very little translation.

@@ -4,25 +4,25 @@ layoutClass: gap-12
 class: jira-intermission-slide
 ---
 
-# Intermission: operational reality walks on stage
+# Intermission: We need to keep track of the work
 
 
 <div v-click class="card mt-4">
-  <div class="text-3xl font-bold">Coordination still matters.</div>
-  <div class="muted mt-2">Move the ticket. Update the status. Add the note. Keep the organization aligned.</div>
+  <div class="text-3xl font-bold">The source of truth matters.</div>
+  <div class="muted mt-2">Tickets, ownership, status, history, reporting — Jira keeps teams coordinated when work gets bigger than one person.</div>
 </div>
 
 <div v-click class="card mt-4">
-  <div class="text-3xl font-bold">Not a villain. Just gravity.</div>
-  <div class="muted mt-2">The work still has to be tracked. The opportunity is making that tracking fit the flow of work.</div>
+  <div class="text-3xl font-bold">But the interface is not built for speed.</div>
+  <div class="muted mt-2">It is clunky, slow, and optimized for completeness over momentum. Every update asks you to leave the work and feed the system.</div>
 </div>
 
 ::right::
 
 <div class="mt-4 text-center">
   <div class="text-6xl">🎟️</div>
-  <div class="mt-2 text-2xl font-bold accent-pink">Please pause your flow state</div>
-  <div class="muted mt-2">This mandatory intermission has been brought to you by operational reality.</div>
+  <div class="mt-2 text-2xl font-bold accent-pink">Useful does not mean fast</div>
+  <div class="muted mt-2">Jira helps the organization move together. It just was not designed around the fastest path from intent to update.</div>
 </div>
 
 <div class="mt-5 flex justify-center">
@@ -32,12 +32,11 @@ class: jira-intermission-slide
   </div>
 </div>
 
-<div v-click class="mt-5 text-2xl leading-tight font-bold text-center">The problem was not Jira existing. The problem was making people leave flow to serve the system.</div>
 
 <!--
-Story beat: let Jira be the operational intermission, not the enemy.
-Say: “Every real organization has some source of truth. The work has to be tracked. The question is whether that reality should get to yank people out of the loop every time.”
-Then transition: I did not replace Jira. I put a smaller, kinder doorway in front of it.
+Story beat: do not dunk on Jira. Establish that it is useful infrastructure, but its UI is optimized for process depth, not quick operational updates.
+Say: “Jira is valuable because it keeps the organization aligned. But when I already know the status, the assignee, or the comment I need to add, the default path is still slow. That speed mismatch is where the interface becomes the bottleneck.”
+Then transition: I did not replace Jira. I put a smaller, faster doorway in front of it.
 -->
 
 ---
